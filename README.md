@@ -1,4 +1,4 @@
-Algorithms Programming Assignments
+# Algorithms Programming Assignments
 
-# COSC 3412
-# Dr. Mazen al Borno
+COSC 3412
+Dr. Mazen al Borno
