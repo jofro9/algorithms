@@ -67,14 +67,21 @@ class RandomInteger:
         return A_val
 
     def useAforB(self):
-        B1 = self.A()
-        B2 = self.A()
+        useful = False
 
-        while B1 > 4:
+        while not useful:
             B1 = self.A()
-
-        while B2 > 4:
             B2 = self.A()
+
+            while B1 > 4:
+                B1 = self.A()
+
+            while B2 > 4:
+                B2 = self.A()
+
+            if abs(B1 - B2) < 2:
+                useful = True
+                # Break
 
         return B1 + B2
 
@@ -88,7 +95,9 @@ B_rand = RandomInteger()
 print("B's random value is: " + str(B_rand.B()))
 
 # Part C
-print("A's new value is: " + str(A_rand.useBforA()))
+print("A's new value using B is: " + str(A_rand.useBforA()))
 
 # Part D
-print("B's new value is: " + str(B_rand.useAforB()) + "\n")
+print("B's new value using A is: " + str(B_rand.useAforB()) + "\n")
+
+# Question 3

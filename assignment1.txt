@@ -21,3 +21,16 @@ values have an even number of factors, except for the perfect squares. These are
 16, 25, 36, 49, 64, 81, and 100. Hence why 10 swithces are left on after the 100th person
 passes through. Mathematically, this is the finite series from 1 to 10 of n^2.
 
+Question 2)
+
+Part A:
+A's random value is: 2
+
+Part B:
+B's random value is: 3
+
+Part C:
+A's new value using B is: 5
+
+Part D:
+B's new value using A is: 7
