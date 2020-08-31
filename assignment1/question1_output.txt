@@ -1,0 +1,19 @@
+Question 1)
+
+Part A:
+
+You have created 100 light bulbs
+All switches are off
+
+After person 10, there are 49 lights on, and 51 lights off.
+After person 40, there are 54 lights on, and 46 lights off.
+After person 70, there are 36 lights on, and 64 lights off.
+After person 100, there are 10 lights on, and 90 lights off.
+
+Part B:
+
+Because the switches are starting in an "off" position, only the switches that are hit an
+odd number of times will be left on, or values that have an odd number of factors. Most all
+values have an even number of factors, except for the perfect squares. These are 1, 4, 9,
+16, 25, 36, 49, 64, 81, and 100. Hence why 10 swithces are left on after the 100th person
+passes through. Mathematically, this is the finite series from 1 to 10 of n^2.
