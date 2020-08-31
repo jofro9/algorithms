@@ -1,6 +1,8 @@
 # Joe Froelicher
 # CSCI 3412 - Algorithms
 # Dr. Mazen al Borno
+# 9/8/2020
+# Assignment 1
 
 import random
 
