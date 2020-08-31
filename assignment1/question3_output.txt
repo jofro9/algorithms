@@ -1,0 +1,67 @@
+# Joe Froelicher
+# CSCI 3412 - Algorithms
+# Dr. Mazen al Borno
+# 9/8/2020
+# Assignment 1
+
+Question 3)
+
+Iteration #0
+___________________________________
+
+Current area: 2.0000000000000004
+Number of triangles: 0
+alpha: 0.7071067811865476
+beta: 0.2928932188134524
+gamma: 0.0
+altitude: 0.0
+
+Iteration #1
+___________________________________
+
+Current area: 2.8284271247461907
+Number of triangles: 4
+alpha: 0.7071067811865476
+beta: 0.2928932188134524
+gamma: 0.7653668647301797
+altitude: 0.9238795325112867
+
+Iteration #2
+___________________________________
+
+Current area: 3.0614674589207187
+Number of triangles: 8
+alpha: 0.07612046748871326
+beta: 0.38268343236508984
+gamma: 0.3901806440322566
+altitude: 0.9807852804032304
+
+Iteration #3
+___________________________________
+
+Current area: 3.121445152258053
+Number of triangles: 16
+alpha: 0.01921471959676957
+beta: 0.1950903220161283
+gamma: 0.19603428065912124
+altitude: 0.9951847266721969
+
+Iteration #4
+___________________________________
+
+Current area: 3.1365484905459398
+Number of triangles: 32
+alpha: 0.004815273327803071
+beta: 0.09801714032956062
+gamma: 0.09813534865483604
+altitude: 0.9987954562051724
+
+Iteration #5
+___________________________________
+
+Current area: 3.1403311569547534
+Number of triangles: 64
+alpha: 0.001204543794827595
+beta: 0.04906767432741802
+gamma: 0.04908245704582458
+altitude: 0.9996988186962042

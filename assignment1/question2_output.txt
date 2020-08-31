@@ -1,0 +1,19 @@
+# Joe Froelicher
+# CSCI 3412 - Algorithms
+# Dr. Mazen al Borno
+# 9/8/2020
+# Assignment 1
+
+Question 2)
+
+Part A:
+A's random value is: 2
+
+Part B:
+B's random value is: 3
+
+Part C:
+A's new value using B is: 5
+
+Part D:
+B's new value using A is: 7
