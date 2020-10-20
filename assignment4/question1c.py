@@ -3,7 +3,7 @@ import math
 def myHash(key):
     return math.trunc(((math.trunc(key) + 6) ** 3 / 17 + key) % 13)
 
-class HashTable:
+class HashTable():
     def __init__(self, length, keys):
         self.hashtable = [None] * length
         self.keys = keys
@@ -22,9 +22,11 @@ class HashTable:
 
             else:
                 for j in range(self.length):
+                    k = (temp[i] + j) % self.length
 
-                    if self.hashtable[ ( temp[i] + j ) % self.length ] != None:
-                        self.hashtable[ ( temp[i] + j ) % self.length ] = keys[i]
+                    if self.hashtable[k] == None:
+                        self.hashtable[k] = keys[i]
+                        break
 
     def output(self):
         for i in range(len(self.hashtable)):
@@ -36,4 +38,3 @@ H = HashTable(len(keys), keys)
 
 H.hashValues()
 H.output()
-

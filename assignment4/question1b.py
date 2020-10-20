@@ -4,10 +4,10 @@ def myHash(key):
     return math.trunc(((math.trunc(key) + 6) ** 3 / 17 + key) % 13)
 
 class Node():
-    def __init__(self, key, prev, nex):
+    def __init__(self, key, prev, next):
         self.key = key
         self.prev = prev
-        self.nex = nex
+        self.next = next
 
 class DoublyLinkedList():
     head = None
@@ -26,12 +26,25 @@ class DoublyLinkedList():
 
     def printNodes(self):
         current_node = self.head
+        i = 0
 
         while current_node is not None:
+
+            if i == 0:
+                print("Head: ")
+
+            elif current_node.next == None:
+                print("Tail: ")
+
+            else:
+                print("Next: ")
+
             print(current_node.key)
             current_node = current_node.next
+            i += 1
 
-class HashTable:
+
+class HashTable():
     def __init__(self, length, keys):
         self.hashtable = [None] * length
         self.keys = keys
@@ -56,6 +69,7 @@ class HashTable:
         j = 1
 
         for h in self.hashtable:
+            print("------------")
             print("Value: " + str(j))
             print("Keys: ")
 
@@ -74,5 +88,3 @@ H = HashTable(len(keys), keys)
 H.hashValues()
 
 H.output()
-
-
