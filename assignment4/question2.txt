@@ -1,0 +1,30 @@
+Question 2
+
+1. Looks good until the 5th value, 800 is not within [128, 799], which is not within the scope of functionality for binary search
+
+				813
+	90			|
+	 |		799
+		128	| 
+		  |	 800
+
+2. Yes, the next value always falls within the bounds of the previous values, by definition of binary search
+	
+	-110
+	   |					287
+					275	|
+		107			|
+		  |	154
+			  |	270
+			       269
+			  166    |
+			     251
+
+3. Looks good until the value 187, which is not bounded by [235, 509]
+
+					823
+	166				|
+	  |	235
+		  |		509
+	   187			  |
+	     |	
