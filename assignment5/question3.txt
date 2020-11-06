@@ -14,11 +14,11 @@ TaxFraud(D, N)
 	else if fraud[D, N] exists
 		return fraud[D, N]
 
-	j is N
+	a is N
 	
-	while j greater than 0
-		count += TaxFraud(D, j)
-		decrement j
+	while a greater than 0
+		count += TaxFraud(D, a)
+		decrement a
 	
 	donations[D,j] is different
 
