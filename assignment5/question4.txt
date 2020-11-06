@@ -1,0 +1,27 @@
+Part A
+
+two-dimensional array called donations that is size D * L
+
+TotalDifferentDonations(D, L)
+	if D is zero
+		then return one
+
+	else if donations[D, L] exists
+		return donations[D, L]
+
+	different is 0
+	j is L
+	
+	while j greater than 0
+		increment different by TotalDifferentDonations(D, L)
+		decrement j
+	
+	donations[D,j] is different
+
+	return donation[D, different]
+
+This solution should run in O(D * L) because it is only dependent upon traversal of the two-dimensional array `donations`, which is size D * L.
+
+
+
+	
