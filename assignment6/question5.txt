@@ -1,0 +1,12 @@
+Question 5. (3 points)
+
+Professor Al Borno has an idea for modifying Prim’s algorithm to obtain the maximum spanning
+tree of a graph. His modified algorithm is based on MST_PRIM on page 634 of the textbook.
+Instead of EXTRACT-MIN on line 7, he has EXTRACT-MAX (i.e., taking the max element of the
+queue). Instead of w(u,v) < v.key, he has w(u,v) > v.key.
+
+a.) 
+It seems as the this will return the maximum spanning tree. On line 7 when he checks for max instead of min, he is checking for the maximum edge of all of the neighbors of the current node. And secondly, he is checking that it is greater than all neighbor edges by changing w(u,v) < v.key to w(u,v) > v.key. We wouldn't need to change anything in addition to what Dr. Al Borno has done to make a maximum spanning tree.
+
+b.)
+We haven't really fundamentally changed anything about the algorithm. I don't think that taking the maximum instead of the minimum qualifies as a different algorithm than Prim's. It is well known that spanning trees can be either maximum or minimum
