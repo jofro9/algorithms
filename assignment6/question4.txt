@@ -1,0 +1,6 @@
+Question 4. (1 point)
+
+You want to find the minimum spanning tree using Kruskal’s algorithm. If you know that all the
+edge weights in your graph are uniformly distributed, how could you improve the algorithm?
+
+Since the edges all have the same weight, normally we would arbitrarily chose an edge (or potentially use alphabetical order?) to start at, and find the MST from their. However, if we wrote a process to first sort the graph, then find the MST, we would reduce the time from O(nlogn) to O((e)log(e)), where e is the number of edges. I'm not sure which sorting algorithm is going to be best here, but it seems that if we can implement bucket sort, we will have the appropriate increased efficiency.

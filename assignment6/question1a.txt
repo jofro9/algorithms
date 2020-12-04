@@ -1,0 +1,73 @@
+Question 1
+
+a.) Run breadth-first search on Graph 1 below using vertex “a” as a source. Show the value
+of the queue Q as well as the values of d and 𝜋 at each iteration. When there is a tie on
+which vertex to visit next, follow alphabetical order (“a” before “b”, etc.).
+
+graph contains nodes with letters a through i and edges between them
+
+breathFirstGraphSearch(graph)
+	initialize queue Q
+	initialize list finished[]
+	start at root node (a)
+
+	push a into Q
+	Q[a]
+	graph.d is 0
+	graph.pi is NULL
+	searched is NULL
+	finished[NULL]
+
+	push a adjacent nodes (d then b then h)
+	pop a
+	Q[d, b, h]
+	graph.d is 1
+	graph.pi is edge[ah]
+	finished[a]
+
+	push d adjacent nodes (c)
+	pop d
+	Q[b, h, c]
+	graph.d is 2
+	graph.pi is edge[dc]
+	finished[a, d]
+
+	push b adjacent nodes
+	pop b
+	Q[h, c, e, g]
+	graph.d is 3
+	graph.pi is edge[bg]
+	finished[a, d, b]
+	
+	push h adjacent nodes
+	pop h
+	Q[c, e, g]
+	graph.d is 3
+	graph.pi is edge[hg]
+	finished[a, d, b, h]
+
+	push c adjacent nodes
+	pop c
+	Q[e, g]
+	graph.d is 3
+	graph.pi is edge[ce]
+	finished[a, d, b, h, c]
+
+	push e adjacent nodes
+	pop e
+	Q[g, f]
+	graph.d is 3
+	graph.pi is edge[ef]
+	finished[a, d, b, h, c, e]
+
+	push g adjacent nodes
+	pop g
+	Q[f, i]
+	graph.d is 3
+	graph.pi is edge[gi]
+	finished[a, d, b, c, e, g]
+
+	pop f and i
+	graph.d is 3
+	graph.pi is edge[gi]
+	finished[a, d, b, c, e, g]

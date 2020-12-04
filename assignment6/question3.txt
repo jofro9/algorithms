@@ -1,0 +1,24 @@
+Question 3
+
+Given a minimum spanning Tree T. Assume we take a random edge not in T, and we modify its
+weight to -∞. How can we modify T to find the new minimum spanning Tree (without having to
+r-rerun Prim’s or Kruskal’s algorithm)? Prove your answer. For example, if the minimum
+spanning tree is given by the edges in red on Graph 2 and you modified the weight of edge (c,e)
+to -∞, how would the minimum spanning tree change?
+
+We know that the new edge will be in the new minimally spanning tree, because its weight is in fact the minimum weight. We also know that MST implies that if there are N nodes, then there must be N-1 edges. Since we added an edge, we now need to remove the edge with the highest weight. This would be edge[cd]. If we look at the graph, we can see that by removing edge[cd] and adding new edge[ce] with weight -∞, we would still have a MST that touces all N nodes.
+
+The edges would be so:
+
+d-a
+a-b
+a-h
+b-g
+g-i
+b-e
+d-f
+f-c
+
+Above we can see 8 edges and 9 nodes by properties of MST's.
+
+This is proved by the cycle property of shortest paths. We know that a shortest path cannot contain any cycles, so we have to have fewer edges than nodes.

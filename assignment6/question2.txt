@@ -1,0 +1,9 @@
+Question 2. (2 points)
+
+Assume vertex v is a descendent of vertex u in a directed graph G and vertex u is not a
+descendent of vertex v. After running dept-first search on G, is it true that v.f > u.f? Explain
+your answer.
+
+v.f cannot be greater than u.f
+
+Directed graph implies connection in at least one direction, so while there may be an edge from u to v, there may not be an edge from v to u, and we know this because v is a descendent of u, and u is NOT a descendent of v. In a depth first search, we would check all of the neighbors of u first, which also means that we will finish searching descendents of u before v. Hence, time of v cannot be greater than time of u.

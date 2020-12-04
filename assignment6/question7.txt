@@ -1,0 +1,13 @@
+Assume you have n currencies C={c1, .., cn} and you have the exchange rates rij between all pair
+of currencies i and j. All exchange rates are positive. Could you use Bellman-Ford to compute
+the most profitable sequence of currency exchanges between all pairs of currencies (assuming
+no negative weight cycles)? For example, the most profitable path to exchange currency c2 to
+currency c7 could be to first convert to currency c1 and then to c7. In other words, the exchange
+rates would be r21 × r17.
+
+The goal is to maximize the products of the exchange rates between any two currencies.
+
+Hint: Given variables x1 and x2, maximizing the product (x1 × x2) is equivalent to maximizing log
+(x1 × x2).
+
+Ligically speaking, it seems like an inefficient algorithm to maximize profit from exhcange rates, however it seems possible. We need to maximize the product of the r_i1, r_i2, ..., r_ik-1, r_ik, which mathematically is equivalent to maximizing the sum of the [-log(r_ij, r_ij+1)] from j = 1 to (k-1) (see hint). The reason we can do this, is because the Bellman-Ford algorithm alows for negative weights. 
