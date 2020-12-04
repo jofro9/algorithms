@@ -1,0 +1,5 @@
+Question 1
+
+Part B
+
+Yes, it takes two operations to check if our monthly income minus the penalty will make it worth while to switch. This is not a terrible decrease in inefficiency, but if we don't have to check, and just can take the highes rate for that month, then that two fewer operations we would have to do each month.

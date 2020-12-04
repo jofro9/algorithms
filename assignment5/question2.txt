@@ -1,0 +1,33 @@
+Hide:42, Move:19, Watch:17, Sell:12, Buy:8, Stop:2
+
+
+				   100
+			      0/     \1
+			Hide:42       58
+				     0/    \1
+			     Move:19      39
+				         0/    \1
+				   Watch:17      22
+				       	   0/    \1
+				             10      Sell:12
+			                0/    \1
+			           Stop:2      Buy:8
+
+Part A
+------
+Hide: 0
+Move: 10
+Watch: 110
+Sell: 1111
+Buy: 11101
+Stop: 11100
+
+Part B
+------
+				Hide	Move	Watch	Sell	Buy	Stop
+____________________________________________________________________
+Frequency		|	42	19	17	12	8	2
+Fixed Length	|	000	001	010	011	100	101			
+Variable-length 	|	0	10	110	1111	11101	11100
+
+For fixed-length code, we need three bits to represent the 6 different strings. So, if we have 100 words total, we need 3 * 100 = 300 bits total. Using variable-length code, we will need (1 * 42) + (2 * 19) + (3 * 17) + (4 * 12) + (5 * 8) + (5 * 2) = 229 bits. A decrease of 71 bits.

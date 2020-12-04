@@ -1,0 +1,25 @@
+You have made a fortune in Wall Street. The IRS is suspicious and you must launder the money.
+You have D dollars and you are considering all the different ways you can divide this amount (in
+integer values) to n different criminal groups. Each group can take up to ai dollars without
+alerting the IRS. You also have D £ a1 + a2 + .. + an. Using bottom-up dynamic programing,
+write pseudo-code to determine how many different ways you can divide the D dollars. What is
+the running time of your solution?
+
+two-dimensional array called fraud that is size D * N
+
+TaxFraud(D, N)
+	if D is zero
+		then return one
+
+	else if fraud[D, N] exists
+		return fraud[D, N]
+
+	a is N
+	
+	while a greater than 0
+		count += TaxFraud(D, a)
+		decrement a
+	
+	donations[D,j] is different
+
+	return donation[D, j]
