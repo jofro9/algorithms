@@ -1,0 +1,9 @@
+Question 3. (5 points)
+
+(a) Let (S,V − S) be a minimum cut in network G. Let (u, v) be an edge such that u ε S and v ε (V-S). It is claimed that increasing the capacity of the edge (u, v) will increase the maximum flow in G. Prove the claim or provide a counterexample.
+
+By the max-flow min-cut theorem, because u is in S, and v is in V-S, that means that edge (u, v) will be incorporated in (S, V - S). Because (S, V - S) is a minimum cut, and knowing that minimum cut is equal to maximum flow, by the theorem, increasing c(u, v) will increase the minimum cut, and in turn the maximum flow of G.
+
+(b) Let f denote the maximum flow of some network G . We then increase the capacity of every edge by 1. It is claimed that the maximum flow in this modified network will be at most f + 1. Prove the claim or provide a counterexample.
+
+This is true for a handful of networks, but not all networks. So long as the minimum cut contains more than one edge, then the maximum flow will be greater than f + 1. Comparatively, if a single (unknown) edge in G has capacity increased by 1, then the maximum flow would be at least f, and at most f + 1.

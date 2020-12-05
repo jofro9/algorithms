@@ -1,0 +1,12 @@
+Question 5. (4 points)
+
+For the statements below, say whether they are True or False and explain your answer.
+
+(a) Your colleague wants to prove that a given problem is NP-complete. He has reduced
+the problem to 3-CNF satisfiability, which shows that the problem is NP-complete.
+
+
+
+(b) If there is a polynomial-time algorithm for 3-CNF satisfiability, then every problem in NP
+has a polynomial-time algorithm, and if any problem in NP has a polynomial-time
+algorithm, then 3-CNF has a polynomial-time algorithm.
