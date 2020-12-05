@@ -1,0 +1,7 @@
+Question 4. (4 points)
+
+You are given a network where every edge has capacity 2. Could you solve the maximum flow problem in O(|E| |V|), where |E| denotes the number of edges and |V| the number of vertices? Explain your answer.
+
+The only hiccup in this problem is if the number of edges is equal to the number of nodes. However, since a property of networks is that they must be closed, then |E| < |V|. All max flow problems can be solved in O(EV) by Orlin 2013. This is simply the maximum traversal time of the network. I actually can forsee a method that would take significantly less than O(EV), since we know the weights of each edge, we would not necessarily need to traverse through each node and edge. That being said, it is certainly possible to compute the maximum flow in O(|E| |V|).
+
+https://dspace.mit.edu/bitstream/handle/1721.1/88020/Orlin_O%28nm%29MaxFlow.pdf%3Bjsessionid%3DD48E74E2D30A6198569F0BED73CEBAEE?sequence%3D1

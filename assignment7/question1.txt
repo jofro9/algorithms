@@ -1,0 +1,30 @@
+Question 1
+
+You own a self-driving car startup. Your marketing team proposes the following advertisement campaign. You will have 10 self-driving cars start at the startup headquarters and arrive at Denver International Airport. If possible, each car will take a different route to arrive at the airport (as you would like the cars to be seen across the city). Given a graph G of Denver (i.e., all the roads are edges and the intersections are vertices), formulate a maximum-flow problem to determine some possible routes the cars can take or determine whether the problem has no solution (i.e., you should have fewer than 10 cars).
+
+Even though its not given, we have to assume that the number of routes through denver is signficantly larger than 10, this is certainly going to be possible. Let's also assume there are at least 10 edges that connect to node t (sink). This problem now will have several solutions.
+
+using Dinic's algorithm (https://en.wikipedia.org/wiki/Dinic%27s_algorithm)
+
+node s = startup
+node t = dia
+f(u, v) = flow
+c(u, v) = capacity
+G[(V, E), c, s, t] = denver
+
+FlowByDinic(G)
+	for all edges in G
+		f = 0
+
+	Flow = 0
+	call construct of level graph G_l, based on G_f
+
+	while path from s to t exists (augmenting path)
+		find blocking flow f_prime in in G_l
+		Flow += f
+		remove edges w/ max c(u, v)
+		remove end nodes that are not s, t
+		
+	return Flow
+
+This will certainly not take less than 10 cars. This algorithm is very useful for roads in city, because of the existence of one way streets.
