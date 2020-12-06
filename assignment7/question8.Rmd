@@ -1,0 +1,34 @@
+---
+title: "Question 8"
+author: "Joseph Froelicher"
+output: word_document
+---
+### Part A
+  
+$$A(x) = 3x^3 + x^2 + 4x + 2$$
+$$B(x) = 2x^2 + x - 3$$
+
+```{r, echo = TRUE, include = TRUE}
+x = -3:2
+y_a = vector("double", length(x))
+y_b = vector("double", length(x))
+
+for (i in 1:length(x)) {
+  y_a[i] = (3 * (x[i] ^ 3)) + (x[i] ^ 2) + (4 * x[i]) + 2
+  y_b[i] = (2 * (x[i] ^ 2)) + x[i] - 3
+}
+
+y_a
+y_b
+```
+
+$$A = \{(x_k, y_k): (-3, -82), (-2, -26), (-1, -4), (0, 2), (1, 10), (2, 38)\}$$
+$$B = \{(x_k, y_k): (-3, 12), (-2, 3), (-1, -2), (0, -3), (1, 0), (2, 7)\}$$
+```{r}
+y_a * y_b
+```
+$$C = \{(x_k, y_k): (-3, -984), (-2, -78), (-1, 8), (0, 6), (1, 0), (2, 266)\}$$
+    
+### Part B
+  
+In the context of FFT, we use point-value representation, because the multiplication of polynomials is very expensive ($O(n^2)$). However, if we use the FFT method, and do point-value representation for our multiplaction the result is the same, with time reduction to $O(n)$.

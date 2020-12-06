@@ -1,0 +1,8 @@
+Question 9.
+
+When multiplying n by n matrices using Strassen’s algorithm, we assume that n is an exact power of two. How could you use Strassen’s algorithm when n is not an exact power of two and what is the impact on the running time?
+
+Under normal circumstances, we use Strassen's algorithm to multiply n by n matrices. However, we can also use it when n is not an exacy power of two, by subsequently padding the non n by n matrices with zeroes, to make square matrices. The former run time for Strassen's algorithm remains the same.
+
+T(n) = 7T(n/2) + O(n^2)
+= O(n^l0g7)

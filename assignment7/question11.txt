@@ -1,0 +1,18 @@
+Question 11.
+
+Given that x and y > 0 and that x is a divisor of y. Show that for any number n, we have (n mod y) mod x = n mod x.
+
+Proof.
+
+	Since (x, y) > 0 and x is a divisor of y,	(given)
+	Let y = C * x, where c is a constant, contained in R,
+	Let n % y = z,
+	Therefore, n = z + D * y, where d is a constant, contained in R,
+
+	n % x   = (z + D * y) % x
+		= (z + D * (C * x)) % x
+		= (z + (C * D * X)) % x
+		= z % x			{(C * D * X) % x = 0}
+		= (n % y) % x
+
+	Q. E. D.

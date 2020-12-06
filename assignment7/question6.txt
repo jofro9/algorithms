@@ -1,0 +1,15 @@
+Question 6
+
+Given point p0 = (x0,y0). The polar angle of point p1=(x0+1,y0+1) with respect to p0 is 45
+degrees. The polar angle of point p2=(x0+1,y0-1) with respect to p0 is 315 degrees. How can
+you sort n points (p1, p2, p3, p4, ..,, pn) with respect to p0 using only cross products in
+O(nlogn)?
+
+We can divide and conquer to sort this list. Lets use mergesort which is time O(nlogn).
+
+We need a function that takes two points as an argument;
+	1. check if the y component of the first point is greater than zero and the y component of the second point is less than zero, and returns true if so.
+	2. check if the y component of the first point is less than zero and the y component of the second point is greater than zero, and returns false is so.
+
+Now check if the x component of point 1 times the y compnenet of point two minus the x compenent of point two times the y component of point 1 is negative.
+Else return true.
