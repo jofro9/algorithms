@@ -1,0 +1,15 @@
+Question 10.
+
+In class, we saw how we could rewrite the FIB procedure with multithreading:
+
+P-FIB( n )
+	if n ≤ 1
+		return n
+	else x = spawn P-FIB(n - 1)
+		y = P-FIB(n - 2)
+		sync
+		return x + y
+
+You get the idea of improving the algorithm by changing line y = P-FIB(n - 2) to y = spawn P-FIB(n - 2). Will this idea improve the algorithm? Explain your answer.
+
+I believe that because the two recursive calls (lines 4 and 5) of P-FIB() are independent of eachother, running line 5 in parallel will not affect the solution itself. And then we would be running both Fibonacci recurrence relations in parallel for a reduction in time complexity. 
