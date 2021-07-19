@@ -1,0 +1,10 @@
+Question 7. (10 points)
+
+Given the network below, we can formulate the maximum flow problem as a linear program.
+The general formulation given in the book (Section 29.2) is reproduced below:
+
+(a) Reduce the number of constraints in the general formation above by indexing of edges instead of vertices.
+(b) Write the linear program to solve the maximum flow program of the network below.
+(c) Convert the linear program in standard form
+(d) Convert the linear program in slack form
+(e) Solve for the first two iterations of the linear program using the simplex algorithm. Show your work.
